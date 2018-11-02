@@ -13,14 +13,14 @@
   :dependencies
   [[org.clojure/clojure      "1.9.0"]
    [org.clojure/core.async   "0.4.474"]
-   [com.taoensso/encore      "2.96.0"]
-   [org.clojure/tools.reader "1.3.0"]
+   [com.taoensso/encore      "2.100.0"]
+   [org.clojure/tools.reader "1.3.2"]
    [com.taoensso/timbre      "4.10.0"]]
 
   :plugins
   [[lein-pprint    "1.2.0"]
    [lein-ancient   "0.6.15"]
-   [lein-codox     "0.10.4"]
+   [lein-codox     "0.10.5"]
    [lein-cljsbuild "1.1.7"]]
 
   :profiles
@@ -28,7 +28,8 @@
    :server-jvm {:jvm-opts ^:replace ["-server"]}
    :1.8  {:dependencies [[org.clojure/clojure "1.8.0"]]}
    :1.9  {:dependencies [[org.clojure/clojure "1.9.0"]]}
-   :test {:dependencies [[com.cognitect/transit-clj  "0.8.309"]
+   :1.10 {:dependencies [[org.clojure/clojure "1.10.0-beta4"]]}
+   :test {:dependencies [[com.cognitect/transit-clj  "0.8.313"]
                          [com.cognitect/transit-cljs "0.8.256"]
                          [org.clojure/test.check     "0.9.0"]]}
 
